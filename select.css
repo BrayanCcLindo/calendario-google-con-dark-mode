@@ -7,7 +7,7 @@
     font: var(--button);   
 
     appearance: none;
-    background-image: url(/icons/Icon=chevron-down.svg);
+    background-image: url(icons/Icon=chevron-down.svg);
     background-repeat: no-repeat;
     background-position: right .5rem center;
 
