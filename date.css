@@ -1,0 +1,70 @@
+.calendar-day{
+    border-block-end: 1px solid currentColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font: var(--body1-medium);
+    color: var(--gray20);
+    margin: 0;
+    position: sticky;
+    background: var(--blanco);
+    top: 0;
+}
+
+.calendar-day a{
+    text-decoration: none;
+    color: currentColor;
+    outline: none;
+}
+
+.calendar-day a:hover span:nth-of-type(2),
+.calendar-day a:focus span:nth-of-type(2){
+    background: var(--gray10);
+}
+
+
+.calendar-day.is-selected a:hover span:nth-of-type(2),
+.calendar-day.is-selected a:focus span:nth-of-type(2){
+    background: var(--blue30);
+}
+
+.calendar-day.is-selected a:hover span:nth-of-type(1),
+.calendar-day.is-selected a:focus span:nth-of-type(1){
+    color: var(--blue30);
+}
+
+
+
+.calendar-day span:nth-of-type(1){
+    font: var(--body1-regular);
+}
+
+.calendar-day span:nth-of-type(2){
+    font: var(--subtitle1);
+    line-height: 2.35rem;
+    inline-size: 2.35rem;
+    display: inline-block;
+    border-radius: 50%;
+
+    
+}
+
+.calendar-day::before{
+    content: '';
+    inline-size: 1px;
+    block-size: 2rem;
+    background: currentColor;
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-end: 0;
+}
+
+.calendar-day.is-selected span:nth-of-type(1){
+    color: var(--blue10);
+}
+
+.calendar-day.is-selected span:nth-of-type(2){
+    background: var(--blue10);
+    color: white;
+}

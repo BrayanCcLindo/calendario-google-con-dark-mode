@@ -1,0 +1,58 @@
+.create-task{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.input i{
+    font-size: 1.5rem;
+}
+
+.input.is-outstanding input{
+    font: var(--subtitle1);
+}
+
+.input-body{
+    display: flex;
+    flex: 1;
+    gap: .25rem;
+
+}
+
+.input-time{
+    display: flex;
+    gap: .75rem;
+}
+
+.input input,
+.input textarea{
+    flex: 1;
+    font: var(--body1-regular);
+    padding-block: .625rem;
+    padding-inline: .75rem;
+    outline: none;
+    border: none;
+    border-radius: .25rem;
+}
+
+
+.input input:focus,
+.input input:hover,
+.input textarea:hover,
+.input textarea:focus{
+    background: var(--gray10);
+}
+
+.input input:focus,
+.input textarea:focus{
+    box-shadow: 0 2px var(--blue10);
+}
+
+

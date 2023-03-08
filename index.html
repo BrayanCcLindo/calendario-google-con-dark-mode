@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Calendario</title>
+</head>
+<body>
+    <div class="page">
+      <header class="header">
+        <div class="header-primary">
+          <div class="header-logo">
+            <button class="button is-compact">
+              <i class="icon-Iconhamburguer-button"></i>
+            </button>
+            <a href="/" aria-current="page" aria-label="calendar" tabindex="-1"> 
+              <img src="/images/logo.png" alt="">
+            </a>
+          </div>
+          <div class="calendar-status">
+            <button class="button is-secondary">Hoy</button>
+            <span class="calendar-status-navigation">
+              <a class="button is-compact" href="#" aria-label="Anterior Semana" >
+                <i class="icon-Iconchevron-left" aria-hidden="true"></i>
+              </a>
+              <a class="button is-compact" href="#" aria-label="Siguiente Semana" >
+                <i class="icon-Iconchevron-right" aria-hidden="true"></i>
+              </a>
+            </span>
+            <time class="calendar-status-date" datetime="25-06-2021">Marzo 2023</time>
+          </div>
+        </div>
+      <div class="header-secondary">
+        <select class="select" name="" id="">
+          <option value="">Semana</option>
+          <option value="">Día</option>
+        </select>
+        <img src="/images/User.png" alt="">
+      </div>
+      
+      </header>
+      <div class="sidebar">
+        <button class="button is-rounded is-shadowed">
+          <i class="icon-Iconplus" aria-hidden="true"></i>
+          <span>Crear</span>
+        </button>
+        <div class="minicalendar">
+          <div class="minicalendar-status">
+             <time class="minicalendar-date" datetime="04-03-2023">Marzo 2023</time>
+             <div class="minicalendar-navigation">
+              <a class="button is-compact" href="#" aria-label="Mes Anterior">
+                <i class="icon-Iconchevron-left"></i>
+               </a>
+               <a class="button is-compact" href="#" aria-label="Siguiente Mes">
+                <i class="icon-Iconchevron-right"></i>
+               </a>
+             </div>
+          </div>
+          <div class="minicalendar-header">
+            <span class="minicalendar-weekday">D</span>
+            <span class="minicalendar-weekday">L</span> 
+            <span class="minicalendar-weekday">M</span> 
+            <span class="minicalendar-weekday">M</span> 
+            <span class="minicalendar-weekday">J</span> 
+            <span class="minicalendar-weekday">V</span> 
+            <span class="minicalendar-weekday">S</span> 
+          </div>
+          <div class="minicalendar-month">
+            <div class="minicalendar-monthday is-inactive">26</div>
+            <div class="minicalendar-monthday is-inactive">27</div>
+            <div class="minicalendar-monthday is-inactive">28</div>
+            <div class="minicalendar-monthday">1</div>
+            <div class="minicalendar-monthday">2</div>
+            <div class="minicalendar-monthday">3</div>
+            <div class="minicalendar-monthday">4</div>
+            <div class="minicalendar-monthday">5</div>
+            <div class="minicalendar-monthday">6</div>
+            <div class="minicalendar-monthday is-selected">7</div>
+            <div class="minicalendar-monthday">8</div>
+            <div class="minicalendar-monthday">9</div>
+            <div class="minicalendar-monthday">10</div>
+            <div class="minicalendar-monthday">11</div>
+            <div class="minicalendar-monthday">12</div>
+            <div class="minicalendar-monthday">13</div>
+            <div class="minicalendar-monthday">14</div>
+            <div class="minicalendar-monthday">15</div>
+            <div class="minicalendar-monthday">16</div>
+            <div class="minicalendar-monthday">17</div>
+            <div class="minicalendar-monthday">18</div>
+            <div class="minicalendar-monthday">19</div>
+            <div class="minicalendar-monthday">20</div>
+            <div class="minicalendar-monthday">21</div>
+            <div class="minicalendar-monthday">22</div>
+            <div class="minicalendar-monthday">23</div>
+            <div class="minicalendar-monthday">24</div>
+            <div class="minicalendar-monthday">25</div>
+            <div class="minicalendar-monthday">26</div>
+            <div class="minicalendar-monthday">27</div>
+            <div class="minicalendar-monthday">28</div>
+            <div class="minicalendar-monthday">29</div>
+            <div class="minicalendar-monthday">30</div>
+            <div class="minicalendar-monthday">31</div>
+            <div class="minicalendar-monthday is-inactive">1</div>
+            <div class="minicalendar-monthday is-inactive">2</div>
+            <div class="minicalendar-monthday is-inactive">3</div>
+            <div class="minicalendar-monthday is-inactive">4</div>
+            <div class="minicalendar-monthday is-inactive">5</div>
+            <div class="minicalendar-monthday is-inactive">6</div>
+            <div class="minicalendar-monthday is-inactive">7</div>
+            <div class="minicalendar-monthday is-inactive">8</div>
+          </div>
+          
+        
+
+
+        </div>
+        <div class="search-button">
+          <form class="search" action="" role="search" aria-label="Buscar personas">
+            <i class="icon-Iconusers" aria-hidden="true"></i>
+            <input type="search" placeholder="Buscar personas">
+        </form>
+        </div>
+        
+        <div class="calendar-contact">
+          <div class="minicalendar-contact">
+            <time class="minicalendar-calendars" datetime="04-03-2023">Mis Calendarios</time>
+               <div class="minicalendar-navigation">
+                <a class="button is-compact" href="#" aria-label="Mes Anterior">
+                  <i class="icon-Iconchevron-up"></i>
+                 </a>
+               </div>
+          </div>
+          <div class="contact-names">
+            <div class="first-name">
+              <a class="button is-compact" href="#" aria-label="Contacto Leonidas Esteban">
+                <i class="icon-Iconcheck-square"></i>
+               </a>
+               <span>Leonidas Esteban</span>
+            </div>
+            <div class="first-name">
+              <a class="button is-compact" href="#" aria-label="Cumpleaños">
+                <i class="icon-Iconcheck-square"></i>
+               </a>
+               <span>Cumpleaños</span>
+            </div>
+            <div class="first-name">
+              <a class="button is-compact" href="#" aria-label="Tareas">
+                <i class="icon-Iconcheck-square"></i>
+               </a>
+               <span>Tareas</span>
+            </div>
+            <div class="first-name">
+              <a class="button is-compact" href="#" aria-label="Recordatorios">
+                <i class="icon-Iconcheck"></i>
+               </a>
+               <span>Recordatorios</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="calendar">
+        <div class="current-time"></div>
+        <div class="calendar-week">
+          <div class="timezone-cell">GMT -5</div>
+          <h2 class="calendar-day" aria-label="">
+            <a href="#" aria-label="Domingo 05 de Marzo">
+              <time datetime="05-03-2023">
+                <span>DOM</span> <br>
+                <span>5</span>
+              </time>
+            </a>
+          </h2>
+          <h2 class="calendar-day" aria-label="">
+            <a href="#" aria-label="Lunes 06 de Marzo">
+              <time datetime="06-03-2023">
+                <span>LUN</span> <br>
+                <span>6</span>
+              </time>
+            </a>
+          </h2>
+          <h2 class="calendar-day is-selected" aria-label="">
+            <a href="#" aria-label="Marter 07 de Marzo">
+              <time datetime="07-03-2023">
+                <span>MAR</span> <br>
+                <span>7</span>
+              </time>
+            </a>
+          </h2>
+          <h2 class="calendar-day" aria-label="">
+            <a href="#" aria-label="Miércoles 08 de Marzo">
+              <time datetime="08-03-2023">
+                <span>MIÉ</span> <br>
+                <span>8</span>
+              </time>
+            </a>
+          </h2>
+          <h2 class="calendar-day " aria-label="">
+            <a href="#" aria-label="Jueves 09 de Marzo">
+              <time datetime="09-03-2023">
+                <span>JUE</span> <br>
+                <span>9</span>
+              </time>
+            </a>
+          </h2>
+          <h2 class="calendar-day" aria-label="">
+            <a href="#" aria-label="Viernes 10 de Marzo">
+              <time datetime="10-03-2023">
+                <span>VIE</span> <br>
+                <span>10</span>
+              </time>
+            </a>
+          </h2>
+          <h2 class="calendar-day" aria-label="">
+            <a href="#" aria-label="Sábado 11 de Marzo">
+              <time datetime="11-03-2023">
+                <span>SAB</span> <br>
+                <span>11</span>
+              </time>
+            </a>
+          </h2>
+          <span class="hour-cell"></span>
+          <div class="task-cell">
+            <div tabindex="0" class="task" aria-label="De 17:00 a 18:00, hacer ejercicio">
+              <p>Hacer Ejercicio</p>
+              <p>
+                <time datetime="17:00">5</time> - <time datetime="18:00">6</time>
+              </p>  
+            </div>
+          </div>
+          <div class="task-cell">
+            <div tabindex="0" class="task" aria-label="De 17:00 a 18:00, hacer ejercicio">
+              <p>Hacer Ejercicio</p>
+              <p>
+                <time datetime="17:00">5</time> - <time datetime="18:00">6</time>
+              </p>  
+            </div>
+          </div>
+          <div tabindex="0" class="task-cell">
+            <div class="task" aria-label="De 17:00 a 18:00, hacer ejercicio">
+              <p>Hacer Ejercicio</p>
+              <p>
+                <time datetime="17:00">5</time> - <time datetime="18:00">6</time>
+              </p>  
+            </div>
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+
+          <span class="hour-cell">1 AM</span>
+          <div class="task-cell is-active">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">2 AM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">3 AM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">4 AM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">5 AM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">6 AM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">7 AM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">8 AM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">9 AM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">10 AM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">11 AM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">12 PM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">1 PM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">2 PM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">3 PM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">4 PM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">5 PM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">6 PM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">7 PM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">8 PM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">9 PM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">10 PM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">11 PM</span>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell">           
+          </div>
+          <div class="task-cell">
+          </div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <div class="task-cell"></div>
+          <span class="hour-cell">12 PM</span>
+
+          
+          
+          
+
+
+
+        </div>
+      </main>
+  
+    </div>
+    <dialog class="modal">
+      <form class="create-task">
+        <div class="input is-outstanding">
+          <div class="input-body">
+            <input required type="text" name="title" placeholder="Design Meet">
+          </div>
+        </div>
+        <div class="input">
+          <i class="icon-Iconclock"></i>
+          <div class="input-body">
+            <input required type="date" name="date">
+            <div class="input-time">
+            <input required type="time" name="date-start">       
+            <input required type="time" name="date-end">
+            </div>
+          </div>
+        </div>
+
+        <div class="input">
+          <i class="icon-Iconusers"></i>
+          <div class="input-body">
+            <input required list="guests" type="text" placeholder="Agregar Invitados" name="guests">
+          <datalist id="guests">
+            <option  value="Paul Ccari "></option>
+            <option value="Almendra Maravi"></option>
+            <option value="Emerson Lindo"></option>
+          </datalist>
+          </div>
+        </div>
+
+        <div class="input">
+          <i class="icon-Icongps"></i>
+          <div class="input-body">
+            <input required type="text" placeholder="Agregar Lugar" name="location">
+          </div>
+        </div>
+        <div class="input">
+          <i class="icon-Iconvideo"></i>
+          <div class="input-body">
+            <input type="file" multiple name="add file">
+          </div>
+        </div>
+        <div class="input">
+          <i class="icon-Icontext"></i>
+          <div class="input-body">
+            <textarea name="Description" placeholder="Agregar descripción o archivo adjuntos" id="" cols="30" rows="1"></textarea>
+          </div>
+        </div>
+
+      </form>
+      <div class="modal-action"> 
+        <button id="close-modal" class="button">Cancelar</button>
+        <button class="button is-primary ">Guardar</button>
+      </div>
+    </dialog>
+
+    <script src="/js/app.js" type="module"></script>
+
+  </body>
+</html>

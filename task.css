@@ -1,0 +1,37 @@
+.task-cell{
+    border-inline-start: 1px solid currentColor;
+    border-block-end: 1px solid currentColor ;
+    padding: .25rem;
+}
+
+.task-cell:nth-child(8n){
+    border-inline-end: 1px solid currentColor;
+}
+.task{
+
+    background: var(--blue10);
+    color: white;
+    border-radius: .25rem;
+    padding-inline: 1rem;
+    padding-block: .625rem;
+    overflow: hidden;
+    font: var(--body2-medium);
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.task p{
+    margin: 0;
+    white-space: nowrap;
+}
+
+.task-cell.is-active::before{
+    content: '(Sin Titulo)';
+    font: small;
+    background: #c6dafc;
+    padding: .25rem;
+    display: block;
+    border-radius: .25rem;
+    box-shadow: 0 0 10px rgba(000, 000, 000, 0.3); 
+}

@@ -1,0 +1,128 @@
+.minicalendar{
+    max-inline-size: 12.25rem;
+    --cellsize: 1.75rem;
+
+}
+
+.minicalendar-header{
+    line-height: var(--cellsize);
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(7, var(--cellsize));
+    grid-template-rows: var(--cellsize);
+    font: var(--body3-regular);
+    text-align: center;
+    margin-block-end: .5rem;
+}
+
+.minicalendar-date{
+    font: var(--body1-medium);
+}
+
+.minicalendar-status{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: .25rem;
+}
+
+.minicalendar-month{
+    display: grid;
+    grid-template-columns: repeat(7, var(--cellsize));
+    grid-template-rows: repeat(6, var(--cellsize));
+    font: var(--body3-regular);
+    text-align: center;
+}
+
+.minicalendar-monthday{
+    line-height: var(--cellsize);
+}
+.minicalendar-monthday.is-selected{
+    background: var(--blue20);
+    color: var(--white);
+    border-radius: 50%;
+}
+.minicalendar-monthday.is-inactive{
+    color: var(--gray20);
+}
+
+
+.minicalendar-navigation{
+    display: flex;
+    gap: 1rem;
+}
+
+
+.search-button{
+    max-inline-size: 12.25rem;
+    --cellsize: 1.75rem;
+}
+
+.search{
+    position: relative;
+    flex: 1;
+
+}
+ 
+.search i{
+    position: absolute;
+    font-size: 1rem;
+    block-size: 1rem;
+    top: calc(50% - .5em);
+    left: 1rem;
+    color: var(--gray50);
+
+}
+
+.search input{
+    background: var(--gray10);
+    padding: .6rem;
+    padding-inline-start: 40px;
+    width: 100%;
+    border: none;
+    max-inline-size: 12.25rem;
+    font: var(--body1-regular);
+}
+
+.search::-webkit-input-placeholder{
+    color: var(--gray20);
+
+}
+
+.search:focus-within i {
+    color: var(--gray20);
+
+}
+
+.calendar-contact{
+    max-inline-size: 12.25rem;
+    --cellsize: 1.75rem;
+}
+
+.minicalendar-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: .25rem;
+    margin-block-end: .5rem;
+}
+
+.contact-names{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.first-name{
+    display: flex;
+    font: var(--body1-regular);
+    width: 100%;
+    block-size: 1.5rem;
+    align-items: center;
+
+}
+
+.first-name i{
+    font-size: 24px;
+    block-size: 24px;
+}

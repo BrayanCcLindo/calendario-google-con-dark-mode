@@ -1,0 +1,46 @@
+.timezone-cell{
+    font: var(--body3-regular);
+    color: var(--gray20);
+    position: sticky;
+    inset-block-start: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    white-space: nowrap;
+    padding-inline-end: 1rem;
+    background: var(--blanco);
+    z-index: 2;
+}
+
+.timezone-cell::before{
+    content: '';
+    inline-size: 5px;
+    block-size: 1px;
+    background: var(--gray20);
+    position: absolute;
+    inset-block-end: 0;
+    inset-inline-end: 0;
+}
+
+
+.hour-cell{
+    place-self: start end;
+    transform: translateY(-50%);
+    padding-inline-end: 1rem;
+    font: var(--body3-regular);
+    color: var(--gray20);
+    position: relative;
+
+}
+
+.hour-cell::before{
+    content: '';
+    inline-size: .5rem;
+    block-size: 1px;
+    position: absolute;
+    background: var(--gray20);
+    inset-block-end: 50%;
+    inset-inline-end: 0;
+
+
+}
