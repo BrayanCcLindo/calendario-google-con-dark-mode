@@ -44,6 +44,16 @@
       --blanco: #04001e;
 
     }
+    .modal{
+      background: radial-gradient(44.4% 53.01% at 50% 55.44%, rgb(7, 53, 85), rgb(4, 0, 30) 100%)fixed;;
+    }
+    .modal i{
+      color: white;
+    }
+    .modal-action button{
+      background: rgb(192, 190, 190);
+    }
+
 
     
 
